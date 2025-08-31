@@ -164,8 +164,8 @@
             bindings = <
 &trans          &trans     &kp UP_ARROW  &trans         &trans                      &trans  &kp PAGE_UP    &mkp MB5   &kp HOME   &trans
 &kp LC(A)       &kp LEFT   &kp DOWN      &kp RIGHT      &trans  &trans      &trans  &trans  &mkp LCLK      &mkp MCLK  &mkp RCLK  &trans
-&kp LEFT_SHIFT  &kp LC(X)  &kp LC(C)     &kp LC(RIGHT)  &trans  &none       &trans  &trans  &kp PAGE_DOWN  &mkp MB4   &kp END    &trans
-&trans          &trans     &trans        &trans         &to 0   &to 0       &trans  &trans                                       &trans
+&kp LEFT_SHIFT  &kp LC(X)  &kp LC(C)     &kp LC(RIGHT)  &trans  &to 0       &trans  &trans  &kp PAGE_DOWN  &mkp MB4   &kp END    &trans
+&trans          &trans     &trans        &trans         &to 0   &none       &trans  &trans                                       &trans
             >;
         };
 

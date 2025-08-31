@@ -113,10 +113,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E         &kp R                       &kp T                                      &kp Y          &kp U  &lt 5 I    &kp O       &kp P
-&mt LS(RCTRL) A   &kp S      &kp D         &kp F                       &kp G      &kp LS(LG(S))      &kp AT_SIGN  &kp H          &kp J  &kp K      &kp L       &kp MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                       &lt 6 B    &mo 4              &kp COLON    &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_SHIFT    &kp LCTRL  &kp LEFT_ALT  &lt 2 INT_KATAKANAHIRAGANA  &lt 3 TAB  &lt 5 SPACE        &kp ENTER    &kp BACKSPACE                                &kt DELETE
+&kp Q             &kp W      &kp E         &kp R                       &kp T                                       &kp Y          &kp U  &lt 5 I    &kp O       &kp P
+&mt LS(RCTRL) A   &kp S      &kp D         &kp F                       &kp G      &kp LS(LG(S))      &kp AT_SIGN   &kp H          &kp J  &kp K      &kp L       &kp MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V                       &lt 6 B    &mo 4              &kp LEFT_WIN  &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_SHIFT    &kp LCTRL  &kp LEFT_ALT  &lt 2 INT_KATAKANAHIRAGANA  &lt 3 TAB  &lt 5 SPACE        &kp ENTER     &kp BACKSPACE                                &kt DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -137,7 +137,7 @@
             bindings = <
 &kp EXCLAMATION             &kp DOUBLE_QUOTES  &kp HASH         &kp PERCENT      &kp AMPERSAND                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE      &kp PIPE          &kp UNDERSCORE
 &kp EQUAL                   &kp SLASH          &kp ASTERISK     &kp MINUS        &kp PLUS       &kp C_MUTE      &kp SQT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN  &kp GREATER_THAN  &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp GRAVE      &trans          &kt SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COMMA      &kp PERIOD        &kp BACKSLASH
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp GRAVE      &kp COLON       &kt SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COMMA      &kp PERIOD        &kp BACKSLASH
 &kt CAPSLOCK                &trans             &trans           &trans           &trans         &trans          &trans         &trans                                                                        &kp UNDERSCORE
             >;
 

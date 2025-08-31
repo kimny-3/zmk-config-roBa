@@ -77,7 +77,7 @@
         };
 
         layer0 {
-            bindings = <&mo 0>;
+            bindings = <&to 0>;
             key-positions = <27 26>;
         };
     };
@@ -120,7 +120,7 @@
             bindings = <
 &kp Q             &kp W      &kp E         &kp R            &kp T                                      &kp Y          &kp U  &lt 5 I    &kp O       &kp P
 &mt RCTRL A       &kp S      &kp D         &kp F            &kp G      &kp LS(LG(S))      &kp AT_SIGN  &kp H          &kp J  &kp K      &kp L       &kp MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V            &lt 6 B    &mo 4              &kp DELETE   &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V            &lt 6 B    &to 4              &kp DELETE   &kp N          &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp LEFT_SHIFT    &kp LCTRL  &kp LEFT_ALT  &lt 2 LA(GRAVE)  &lt 3 TAB  &lt 5 SPACE        &kp ENTER    &kp BACKSPACE                                &kp LEFT_WIN
             >;
 
@@ -165,7 +165,7 @@
 &trans          &trans     &kp UP_ARROW  &trans         &trans                      &trans  &kp PAGE_UP    &mkp MB5   &kp HOME   &trans
 &kp LC(A)       &kp LEFT   &kp DOWN      &kp RIGHT      &trans  &trans      &trans  &trans  &mkp LCLK      &mkp MCLK  &mkp RCLK  &trans
 &kp LEFT_SHIFT  &kp LC(X)  &kp LC(C)     &kp LC(RIGHT)  &trans  &none       &trans  &trans  &kp PAGE_DOWN  &mkp MB4   &kp END    &trans
-&trans          &trans     &trans        &trans         &mo 0   &mo 0       &trans  &trans                                       &trans
+&trans          &trans     &trans        &trans         &to 0   &to 0       &trans  &trans                                       &trans
             >;
         };
 

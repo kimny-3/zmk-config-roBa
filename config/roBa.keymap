@@ -75,6 +75,11 @@
             bindings = <&kp END>;
             key-positions = <18 19>;
         };
+
+        layer0 {
+            bindings = <&mo 0>;
+            key-positions = <27 26>;
+        };
     };
 
     macros {

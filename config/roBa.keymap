@@ -93,10 +93,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E         &kp R             &kp T                                        &kp Y          &kp U  &lt 5 I    &kp O      &kp P
-&kp A             &kp S      &kp D         &kp F             &kp G      &kp LS(LG(S))      &kp MINUS      &kp H          &kp J  &kp K      &kp L      &kp MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &lt 6 B    &kp COLON          &kp SEMICOLON  &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
-&kp LEFT_SHIFT    &kp LCTRL  &kp LEFT_ALT  &lt 2 LANGUAGE_4  &lt 3 TAB  &kp SPACE          &kp ENTER      &kp BACKSPACE                               &kt LEFT_WIN
+&kp Q             &kp W      &kp E         &kp R             &kp T                                      &kp Y          &kp U  &lt 5 I    &kp O      &kp P
+&kp A             &kp S      &kp D         &kp F             &kp G      &kp LS(LG(S))      &kp AT_SIGN  &kp H          &kp J  &kp K      &kp L      &kp MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &lt 6 B    &kp COLON          &kp COLON    &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
+&kp LEFT_SHIFT    &kp LCTRL  &kp LEFT_ALT  &lt 2 LANGUAGE_4  &lt 3 TAB  &kp SPACE          &kp ENTER    &kp BACKSPACE                               &kt LEFT_WIN
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -115,10 +115,10 @@
 
         SYMBOLE {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RS(UNDERSCORE)
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp AT_SIGN          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH   &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &kt LC(EXCLAMATION)  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COMMA  &kp PERIOD            &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans               &trans                                                                        &kp PIPE
+&kp EXCLAMATION             &kp DOUBLE_QUOTES  &kp HASH         &kp PERCENT      &kp AMPERSAND                                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE      &kp PIPE          &kp UNDERSCORE
+&kp EQUAL                   &kp SLASH          &kp ASTERISK     &kp MINUS        &kp PLUS       &kp LC(LA(KP_NUMBER_0))      &kp SQT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN  &kp GREATER_THAN  &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD     &kp GRAVE                    &kt SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COMMA      &kp PERIOD        &kp BACKSLASH
+&trans                      &trans             &trans           &trans           &trans         &trans                       &trans         &trans                                                                        &kp UNDERSCORE
             >;
         };
 

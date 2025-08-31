@@ -46,32 +46,32 @@
             key-positions = <22 23>;
         };
 
-        C.ESC {
+        c.esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
 
-        CTRL_A {
+        ctrl.a {
             bindings = <&kp LC(A)>;
             key-positions = <10 11>;
         };
 
-        PageUP {
+        pageup {
             bindings = <&kp PAGE_UP>;
             key-positions = <8 9>;
         };
 
-        PageDown {
+        pagedown {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <20 21>;
         };
 
-        C.HOME {
+        c.home {
             bindings = <&kp HOME>;
             key-positions = <6 7>;
         };
 
-        C.END {
+        c.end {
             bindings = <&kp END>;
             key-positions = <18 19>;
         };

@@ -29,7 +29,7 @@ layers:
   - V
   - {t: B, h: Bluetooth}
   - MOUSE
-  - ':'
+  - DELETE
   - N
   - M
   - ','
@@ -38,12 +38,12 @@ layers:
   - LEFT SHIFT
   - LCTRL
   - LEFT ALT
-  - {t: INT MUHENKAN, h: SYMBOLE}
+  - {t: Alt+`, h: SYMBOLE}
   - {t: TAB, h: ARROW}
   - {t: SPACE, h: Function+Scroll}
   - ENTER
   - BACKSPACE
-  - {t: LEFT WIN, h: toggle}
+  - LEFT WIN
   Free:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -116,7 +116,7 @@ layers:
   - KP 2
   - KP 3
   - '`'
-  - {t: ▽, type: trans}
+  - ':'
   - {t: ;, h: toggle}
   - '{'
   - '}'
@@ -316,7 +316,7 @@ combos:
 - p: [22, 23]
   k: '&to_layer_0 INT_MUHENKAN'
 - p: [0, 1]
-  k: {t: ESC, s: '`'}
+  k: ESCAPE
 - p: [10, 11]
   k: Ctl+A
 - p: [8, 9]

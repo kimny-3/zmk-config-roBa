@@ -55,6 +55,26 @@
             bindings = <&kp LC(A)>;
             key-positions = <10 11>;
         };
+
+        PageUP {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <8 9>;
+        };
+
+        PageDown {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <20 21>;
+        };
+
+        C.HOME {
+            bindings = <&kp HOME>;
+            key-positions = <6 7>;
+        };
+
+        C.END {
+            bindings = <&kp END>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
@@ -93,10 +113,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W      &kp E         &kp R             &kp T                                      &kp Y          &kp U  &lt 5 I    &kp O      &kp P
-&mt LS(RCTRL) A   &kp S      &kp D         &kp F             &kp G      &kp LS(LG(S))      &kp AT_SIGN  &kp H          &kp J  &kp K      &kp L      &kp MINUS
-&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V             &lt 6 B    &kp COLON          &kp COLON    &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
-&kp LEFT_SHIFT    &kp LCTRL  &kp LEFT_ALT  &lt 2 LANGUAGE_4  &lt 3 TAB  &kp SPACE          &kp ENTER    &kp BACKSPACE                               &kt LEFT_WIN
+&kp Q             &kp W      &kp E         &kp R               &kp T                                      &kp Y          &kp U  &lt 5 I    &kp O      &kp P
+&mt LS(RCTRL) A   &kp S      &kp D         &kp F               &kp G      &kp LS(LG(S))      &kp AT_SIGN  &kp H          &kp J  &kp K      &kp L      &kp MINUS
+&mt LEFT_SHIFT Z  &kp X      &kp C         &kp V               &lt 6 B    &mo 4              &kp COLON    &kp N          &kp M  &mkp LCLK  &mkp RCLK  &kp SLASH
+&kp LEFT_SHIFT    &kp LCTRL  &kp LEFT_ALT  &lt 2 INT_MUHENKAN  &lt 3 TAB  &kp SPACE          &kp ENTER    &kp BACKSPACE                               &kt LEFT_WIN
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -118,7 +138,7 @@
 &kp EXCLAMATION             &kp DOUBLE_QUOTES  &kp HASH         &kp PERCENT      &kp AMPERSAND                                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE      &kp PIPE          &kp UNDERSCORE
 &kp EQUAL                   &kp SLASH          &kp ASTERISK     &kp MINUS        &kp PLUS       &kp LC(LA(KP_NUMBER_0))      &kp SQT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN  &kp GREATER_THAN  &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD     &kp GRAVE                    &kt SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COMMA      &kp PERIOD        &kp BACKSLASH
-&trans                      &trans             &trans           &trans           &trans         &trans                       &trans         &trans                                                                        &kp UNDERSCORE
+&kt CAPSLOCK                &trans             &trans           &trans           &trans         &trans                       &trans         &trans                                                                        &kp UNDERSCORE
             >;
         };
 
@@ -135,10 +155,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp PAGE_UP    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1       &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &mo 0       &trans  &trans  &kp PAGE_DOWN  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
             >;
         };
 

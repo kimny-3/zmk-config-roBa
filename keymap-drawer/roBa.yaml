@@ -11,7 +11,7 @@ layers:
   - {t: I, h: Function+Scroll}
   - O
   - P
-  - {t: A, h: Sft+RCTRL}
+  - {t: A, h: RCTRL}
   - S
   - D
   - F
@@ -27,8 +27,8 @@ layers:
   - X
   - C
   - V
-  - {t: B, h: Bluetooth}
-  - MOUSE
+  - {t: B, h: Bluetooth, type: held}
+  - {t: MOUSE, type: held}
   - DELETE
   - N
   - M
@@ -97,8 +97,8 @@ layers:
   - (
   - )
   - '~'
+  - ^
   - '|'
-  - _
   - '='
   - /
   - '*'
@@ -113,8 +113,8 @@ layers:
   - '%'
   - {t: KP 0, h: LEFT SHIFT}
   - KP 1
-  - KP 2
-  - KP 3
+  - ^
+  - '~'
   - '`'
   - ':'
   - {t: ;, h: toggle}
@@ -195,16 +195,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
+  - '&mkp LCLK'
+  - '&mkp MCLK'
+  - '&mkp RCLK'
   - {t: ▽, type: trans}
   - LEFT SHIFT
   - Ctl+X
   - Ctl+C
   - Ctl+RIGHT
   - {t: ▽, type: trans}
-  - {t: default, type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PAGE DOWN
@@ -215,8 +215,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - default
+  - default
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -327,3 +327,5 @@ combos:
   k: HOME
 - p: [18, 19]
   k: END
+- p: [27, 26]
+  k: default

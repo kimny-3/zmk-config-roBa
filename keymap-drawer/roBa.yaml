@@ -22,7 +22,7 @@ layers:
   - J
   - K
   - L
-  - ''''
+  - '-'
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -32,18 +32,18 @@ layers:
   - ;
   - N
   - M
-  - ','
-  - .
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - /
   - LCTRL
   - LEFT WIN
   - LEFT ALT
   - {t: '&to_layer_0 INT_HENKAN', h: '6'}
   - {t: SPACE, h: NUM}
-  - {t: '&to_layer_0 INT_MUHENKAN', h: ARROW}
+  - SPACE
+  - ENTER
   - BACKSPACE
-  - {t: ENTER, h: FUNCTION}
-  - DEL
+  - '&bootloader'
   FUNCTION:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -86,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - F12
   NUM:
   - '-'
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

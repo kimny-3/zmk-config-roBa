@@ -80,6 +80,11 @@
             bindings = <&to 0>;
             key-positions = <27 26>;
         };
+
+        ctra_shift_tab {
+            bindings = <&kp LS(LC(T))>;
+            key-positions = <4 3>;
+        };
     };
 
     macros {

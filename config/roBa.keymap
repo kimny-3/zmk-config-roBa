@@ -88,7 +88,7 @@
 
         redo {
             bindings = <&kp LC(Y)>;
-            key-positions = <17>;
+            key-positions = <17 18>;
         };
     };
 

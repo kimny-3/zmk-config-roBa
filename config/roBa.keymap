@@ -22,6 +22,7 @@
   /* device = <&trackball>;   ← 未指定なら付けてください */
   input-processors = <&mouse_temp_layer>;
 };
+};
 
 
 &mt {
@@ -30,8 +31,8 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
-    scroll-layers = <5>;
+    // automouse-layer = <4>;
+    // scroll-layers = <5>;
 
     // arrows {
     //     layers = <3>;

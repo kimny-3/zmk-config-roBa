@@ -6,21 +6,23 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 #include <input/processors.dtsi>
-#define MOUSE 4  /* マウス層の番号 */
+#define MOUSE 4  /* ← あなたのマウス層番号 */
 
+/* 1) プロセッサ提供ノード（引数式：cells=2） */
  /{
    mouse_temp_layer: mouse_temp_layer {
      compatible = "zmk,input-processor-temp-layer";
-     #input-processor-cells = <0>;   /* ★これが必須 */
-     then-layer = <MOUSE>;
-     timeout-ms = <2500>;            /* 好みで 1500–5000 等 */
+     #input-processor-cells = <2>;   /* ★ 2個の引数を受け取る */
+     /* ★ 引数式では then-layer/timeout-ms は書かない */
    };
 };  /* ← セミコロン忘れ注意 */
 
+/* 2) リスナーに phandle+2引数 で割り当てる */
 &trackball_listener {
   status = "okay";
-  device = <&trackball>;            /* ★必須（L/Rどちらのビルドでも） */
-  input-processors = <&mouse_temp_layer>;
+  device = <&trackball>;
+  /* 引数 = <layer timeout_ms> の順（bindingに依存） */
+  input-processors = <&mouse_temp_layer MOUSE 2500>;  /* 例：レイヤ4、2.5秒 */
 };  /* ← セミコロン忘れ注意 */
 
 

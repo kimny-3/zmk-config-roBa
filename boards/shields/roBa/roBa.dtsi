@@ -1,12 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
-#include <input/processors.dtsi>
-#define MOUSE 4
-    &mkp_input_listner {
-        input-processors = <&zip_temp_layer mouse 250>;
-    };
-
 / {
     chosen {
         zmk,physical-layout = &roba_physical_layout;

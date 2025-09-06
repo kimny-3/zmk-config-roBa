@@ -6,11 +6,10 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 #include <input/processors.dtsi>
-#define MOUSE 4
-    &mkp_input_listner {
+#define MOUSE 4 // 各自のマウスレイヤーに合わせて設定
+&mkp_input_listener {
     input-processors = <&zip_temp_layer MOUSE 250>;
 };
-
 
 &mt {
     flavor = "balanced";

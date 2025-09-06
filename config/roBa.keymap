@@ -6,27 +6,20 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define MOUSE 4  /* ← あなたのマウス層番号 */
-
-/* 1) プロセッサ提供ノード（引数式：cells=2） */
-
+#define MOUSE 4
 / {
     mouse_temp_layer: mouse_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;   /* ★ 2個の引数を受け取る */
-        /* ★ 引数式では then-layer/timeout-ms は書かない */
+        #input-processor-cells = <2>;
     };
-};  /* ← セミコロン忘れ注意 */
-/* 2) リスナーに phandle+2引数 で割り当てる */
-
+};
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
+    input-processors = <&mouse_temp_layer MOUSE 2500>;
+};
 
-    /* 引数 = <layer timeout_ms> の順（bindingに依存） */
 
-    input-processors = <&mouse_temp_layer MOUSE 2500>;  /* 例：レイヤ4、2.5秒 */
-};  /* ← セミコロン忘れ注意 */
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;

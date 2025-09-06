@@ -6,23 +6,22 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 #include <input/processors.dtsi>
-#define MOUSE 4  /* ← あなたのマウス層番号に合わせる */
+#define MOUSE 4  /* マウス層の番号 */
 
  /{
-   /* ポインタ入力が来たら一時的に MOUSE 層を上げる */
    mouse_temp_layer: mouse_temp_layer {
      compatible = "zmk,input-processor-temp-layer";
+     #input-processor-cells = <0>;   /* ★これが必須 */
      then-layer = <MOUSE>;
-     timeout-ms = <2500>;  /* “クリックまで居続ける”に寄せたいなら長め(1500–5000)に */
+     timeout-ms = <2500>;            /* 好みで 1500–5000 等 */
    };
- };
+};  /* ← セミコロン忘れ注意 */
 
 &trackball_listener {
   status = "okay";
-  device = <&trackball>;
+  device = <&trackball>;            /* ★必須（L/Rどちらのビルドでも） */
   input-processors = <&mouse_temp_layer>;
-};
-
+};  /* ← セミコロン忘れ注意 */
 
 
 &mt {

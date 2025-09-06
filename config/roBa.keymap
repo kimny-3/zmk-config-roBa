@@ -21,7 +21,7 @@
   status = "okay";
   /* device = <&trackball>;   ← 未指定なら付けてください */
   input-processors = <&mouse_temp_layer>;
-}
+};
 
 
 &mt {

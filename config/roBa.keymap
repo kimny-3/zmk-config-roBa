@@ -18,7 +18,7 @@
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-    input-processors = <&mouse_temp_layer MOUSE 2000>;
+    input-processors = <&mouse_temp_layer MOUSE 1000>;
 };
 
 &mt {

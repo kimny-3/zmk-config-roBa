@@ -184,7 +184,7 @@
             bindings = <
 &kp EXCLAMATION             &kp DOUBLE_QUOTES  &kp HASH      &kp PERCENT  &kp AMPERSAND                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE      &kp CARET         &kp PIPE
 &kp EQUAL                   &kp SLASH          &kp ASTERISK  &kp MINUS    &kp PLUS       &kp C_MUTE      &kp SQT    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN  &kp GREATER_THAN  &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1    &kp CARET     &kp TILDE    &kp GRAVE      &kp SEMI        &kt COLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COMMA      &kp QUESTION      &kp BACKSLASH
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1    &kp CARET     &kp TILDE    &kp GRAVE      &kp SEMI        &kp COLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COMMA      &kp QUESTION      &kp BACKSLASH
 &kt CAPSLOCK                &kp LEFT_SHIFT     &trans        &trans       &trans         &trans          &trans     &trans                                                                        &kp UNDERSCORE
             >;
 

@@ -6,8 +6,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-
 #define MOUSE 4
+
 / {
     mouse_temp_layer: mouse_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
@@ -25,8 +25,6 @@
     flavor = "balanced";
     quick-tap-ms = <0>;
 };
-
-
 
 &trackball {
     // automouse-layer = <4>;
@@ -190,7 +188,7 @@
 &kt CAPSLOCK                &kp LEFT_SHIFT     &trans        &trans       &trans         &trans          &trans     &trans                                                                        &kp UNDERSCORE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         ARROW {

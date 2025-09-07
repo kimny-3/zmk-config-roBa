@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+k#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
@@ -13,6 +13,10 @@
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
     };
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
 };
 
 &trackball_listener {

@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - {t: B, h: Bluetooth}
-  - {t: '4', h: toggle}
+  - {t: TAB, h: Function+Scroll}
   - DELETE
   - N
   - M
@@ -41,8 +41,8 @@ layers:
   - {t: Alt+`, h: SYMBOLE}
   - {t: SPACE, h: ARROW}
   - LEFT SHIFT
-  - ENTER
   - BACKSPACE
+  - {t: ENTER, h: SYMBOLE}
   - LEFT WIN
   Free:
   - {t: ▽, type: trans}
@@ -90,48 +90,48 @@ layers:
   - F12
   SYMBOLE:
   - '!'
-  - '"'
+  - '@'
   - '#'
+  - $
   - '%'
+  - ^
   - '&'
+  - '*'
   - (
   - )
-  - '~'
-  - ^
-  - '|'
-  - '='
-  - /
-  - '*'
-  - '-'
-  - +
+  - '`'
+  - LEFT SHIFT
+  - LEFT SHIFT
+  - LEFT SHIFT
+  - LEFT SHIFT
   - MUTE
-  - ''''
+  - ''
+  - ''
+  - ''
   - '['
   - ']'
-  - <
-  - '>'
-  - '%'
-  - {t: KP 0, h: LEFT SHIFT}
-  - KP 1
-  - ^
-  - '~'
-  - '`'
-  - ;
-  - ':'
-  - '{'
-  - '}'
-  - ','
-  - '?'
-  - \
-  - {t: CAPSLOCK, h: toggle}
+  - '-'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - LEFT SHIFT
-  - {t: ▽, type: trans}
+  - LANGUAGE 5
+  - ''
+  - \
+  - ;
+  - ''''
+  - '='
+  - {t: CAPSLOCK, h: toggle}
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
+  - LEFT SHIFT
+  - LEFT SHIFT
+  - LEFT SHIFT
+  - LEFT SHIFT
+  - ''
   ARROW:
   - ESCAPE
   - Ctl+Sft+TAB
@@ -148,7 +148,7 @@ layers:
   - DOWN ARROW
   - RIGHT ARROW
   - END
-  - {t: ▽, type: trans}
+  - MUTE
   - {t: ▽, type: trans}
   - '4'
   - '5'
@@ -184,8 +184,8 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  - '&mkp MCLK'
   - ''
+  - '&mkp MCLK'
   - {t: ▽, type: trans}
   - Ctl+A
   - LEFT
@@ -195,10 +195,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
+  - ''
   - '&mkp LCLK'
   - Function+Scroll
   - '&mkp RCLK'
-  - ''
   - LEFT SHIFT
   - Ctl+X
   - Ctl+C
@@ -216,9 +216,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: default, h: toggle}
-  - {t: default, h: toggle}
-  - ENTER
+  - LEFT SHIFT
   - BACKSPACE
+  - ENTER
   - {t: ▽, type: trans}
   Function+Scroll:
   - F1
@@ -248,14 +248,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F12
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

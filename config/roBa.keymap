@@ -50,72 +50,72 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <11 12 38>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <12 13 38>;
         };
 
         c_esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <0 1 38>;
         };
 
         ctrl_a {
             bindings = <&kp LC(A)>;
-            key-positions = <10 11>;
+            key-positions = <10 11 38>;
         };
 
         pageup {
             bindings = <&kp PAGE_UP>;
-            key-positions = <8 9>;
+            key-positions = <8 9 38>;
         };
 
         pagedown {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <20 21>;
+            key-positions = <20 21 38>;
         };
 
         c_home {
             bindings = <&kp HOME>;
-            key-positions = <6 7>;
+            key-positions = <6 7 38>;
         };
 
         c_end {
             bindings = <&kp END>;
-            key-positions = <18 19>;
+            key-positions = <18 19 38>;
         };
 
         ctra_shift_tab {
             bindings = <&kp LS(LC(T))>;
-            key-positions = <4 3>;
+            key-positions = <4 3 38>;
         };
 
         undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <5 6>;
+            key-positions = <5 6 38>;
         };
 
         redo {
             bindings = <&kp LC(Y)>;
-            key-positions = <17 18>;
+            key-positions = <17 18 38>;
         };
 
         ctrlz {
             bindings = <&kp LC(X)>;
-            key-positions = <22 23>;
+            key-positions = <22 23 38>;
         };
 
         ctrlc {
             bindings = <&kp LC(C)>;
-            key-positions = <23 24>;
+            key-positions = <23 24 38>;
         };
 
         ctrlv {
             bindings = <&kp LC(V)>;
-            key-positions = <24 25>;
+            key-positions = <24 25 38>;
         };
     };
 

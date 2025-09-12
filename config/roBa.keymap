@@ -201,7 +201,7 @@
             bindings = <
 &trans          &trans     &kp UP_ARROW  &trans     &trans                                     &none      &none  &none      &mkp MCLK  &trans
 &kp LC(A)       &kp LEFT   &kp DOWN      &kp RIGHT  &trans  &trans              &trans         &none      &none  &mkp LCLK  &mo 5      &mkp RCLK
-&kp LEFT_SHIFT  &kp LC(X)  &kp LC(C)     &kp LC(V)  &trans  &none               &kp DELETE     &none      &none  &none      &none      &trans
+&kp LEFT_SHIFT  &kp LC(X)  &kp LC(C)     &kp LC(V)  &trans  &mo 4               &kp DELETE     &none      &none  &none      &none      &trans
 &mo 5           &trans     &trans        &trans     &to 0   &kp LEFT_SHIFT      &kp BACKSPACE  &kp ENTER                               &trans
             >;
         };

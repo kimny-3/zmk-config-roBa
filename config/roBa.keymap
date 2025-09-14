@@ -27,10 +27,11 @@
     input-processors = <&mouse_temp_layer MOUSE 10000>;
 };
 
-#define POS_LCLK    19   /* TODO: 左クリックの position 番号 */
-#define POS_MCLK    20   /* TODO: 中央クリックの position 番号 */
-#define POS_RCLK    21   /* TODO: 右クリックの position 番号 */
-#define POS_SCROLL  8   /* TODO: &mo 5 のキー1 の position 番号 */
+
+#define POS_LCLK    19
+#define POS_MCLK    20
+#define POS_RCLK    21
+#define POS_SCROLL  8
 
 excluded-positions = <
             POS_LCLK
@@ -40,6 +41,8 @@ excluded-positions = <
         >;
     };
 };
+
+
 
 &mt {
     flavor = "balanced";

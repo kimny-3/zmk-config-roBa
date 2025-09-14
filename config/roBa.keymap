@@ -21,13 +21,13 @@
 #define POS_SCROLL  8
 
 &mouse_temp_layer {
-excluded-positions = <
+    excluded-positions = <
             POS_LCLK
             POS_MCLK
             POS_RCLK
             POS_SCROLL
-        >;
-    };
+    >;
+};
 
 &trackball_listener {
     status = "okay";
@@ -40,11 +40,6 @@ excluded-positions = <
 
     input-processors = <&mouse_temp_layer MOUSE 10000>;
 };
-
-
-
-
-
 
 &mt {
     flavor = "balanced";
@@ -208,7 +203,7 @@ excluded-positions = <
         SYMBOLE {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN     &kp HASH        &kp DOLLAR      &kp PERCENT                                         &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp GRAVE        &kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp C_MUTE          &none           &none           &none          &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp MINUS
+&kp GRAVE        &kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp LEFT_SHIFT  &kp C_MUTE          &none           &none           &none          &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp UNDERSCORE
 &none            &none           &none           &none           &none           &kp LEFT_SHIFT      &kp LANGUAGE_5  &none           &kp BACKSLASH  &kp SEMICOLON     &kp SQT               &kp EQUAL
 &kt CAPSLOCK     &none           &none           &none           &kp LEFT_SHIFT  &kp LEFT_SHIFT      &kp LEFT_SHIFT  &kp LEFT_SHIFT                                                         &none
             >;

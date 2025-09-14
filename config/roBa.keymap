@@ -21,6 +21,10 @@
     input-processors = <&mouse_temp_layer MOUSE 10000>;
 };
 
+&mkp_input_listener {
+    input-processors = <&mouse_temp_layer 10000>;
+};
+
 
 
 

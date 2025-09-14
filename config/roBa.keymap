@@ -23,16 +23,16 @@
 
 &mkp_input_listener {
     // <&node  LAYER  TIMEOUT_MS>
+
     input-processors = <&mouse_temp_layer MOUSE 10000>;
 };
-
 
 #define POS_LCLK    19   /* TODO: 左クリックの position 番号 */
 #define POS_MCLK    20   /* TODO: 中央クリックの position 番号 */
 #define POS_RCLK    21   /* TODO: 右クリックの position 番号 */
 #define POS_SCROLL  8   /* TODO: &mo 5 のキー1 の position 番号 */
 
-        excluded-positions = <
+excluded-positions = <
             POS_LCLK
             POS_MCLK
             POS_RCLK
@@ -40,10 +40,6 @@
         >;
     };
 };
-
-
-
-
 
 &mt {
     flavor = "balanced";
@@ -228,10 +224,10 @@
 
         MOUSE {
             bindings = <
-&trans          &trans     &kp UP_ARROW  &trans     &trans                                     &none      &none  &none      &mkp MCLK  &trans
-&kp LC(A)       &kp LEFT   &kp DOWN      &kp RIGHT  &trans  &trans              &trans         &none      &none  &mkp LCLK  &mo 5      &mkp RCLK
-&kp LEFT_SHIFT  &kp LC(X)  &kp LC(C)     &kp LC(V)  &trans  &none               &kp DELETE     &none      &none  &none      &none      &trans
-&mo 5           &kp RCTRL  &trans        &trans     &to 0   &kp LEFT_SHIFT      &kp BACKSPACE  &kp ENTER                               &trans
+&none  &none  &none  &none  &none                    &none  &none  &none      &mkp MCLK  &none
+&none  &none  &none  &none  &none  &none      &none  &none  &none  &mkp LCLK  &mo 5      &mkp RCLK
+&none  &none  &none  &none  &none  &none      &none  &none  &none  &none      &none      &none
+&none  &none  &none  &none  &none  &none      &none  &none                               &none
             >;
         };
 

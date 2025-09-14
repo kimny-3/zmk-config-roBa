@@ -18,8 +18,16 @@
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-    input-processors = <&mouse_temp_layer MOUSE 1000>;
+    input-processors = <&mouse_temp_layer MOUSE 10000>;
 };
+
+#include <input/processors.dtsi>
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer MOUSE 10000>;
+};
+
+
+
 
 &mt {
     flavor = "balanced";

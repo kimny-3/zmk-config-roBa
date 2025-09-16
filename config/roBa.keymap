@@ -213,10 +213,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                           &kp N7        &kp N8        &kp NUMBER_9  &kp SLASH   &kp ASTERISK
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &kp C_MUTE      &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans      &kp MINUS
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans          &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp PLUS
-&trans          &trans                  &trans          &trans                   &trans   &trans          &trans  &kp N0                                                &kp ENTER
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                                   &kp N7        &kp N8        &kp NUMBER_9  &kp SLASH   &kp ASTERISK
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &kp C_MUTE      &trans          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans      &kp MINUS
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans          &none           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp PLUS
+&trans          &trans                  &trans          &trans                   &trans   &trans          &kp LEFT_SHIFT  &kp N0                                                &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;

@@ -65,84 +65,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        c_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
-        };
-
-        ctrl_a {
-            bindings = <&kp LC(A)>;
-            key-positions = <10 11>;
-        };
-
-        pageup {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <8 9>;
-        };
-
-        pagedown {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <20 21>;
-        };
-
-        c_home {
-            bindings = <&kp HOME>;
-            key-positions = <6 7>;
-        };
-
-        c_end {
-            bindings = <&kp END>;
-            key-positions = <18 19>;
-        };
-
-        ctra_shift_tab {
-            bindings = <&kp LS(LC(T))>;
-            key-positions = <4 3>;
-        };
-
-        undo {
-            bindings = <&kp LC(Z)>;
-            key-positions = <5 6>;
-        };
-
-        redo {
-            bindings = <&kp LC(Y)>;
-            key-positions = <17 18>;
-        };
-
-        ctrlz {
-            bindings = <&kp LC(X)>;
-            key-positions = <22 23>;
-        };
-
-        ctrlc {
-            bindings = <&kp LC(C)>;
-            key-positions = <23 24>;
-        };
-
-        ctrlv {
-            bindings = <&kp LC(V)>;
-            key-positions = <24 25>;
-        };
-
-        layer0 {
-            bindings = <&to 0>;
-            key-positions = <25 26>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -180,21 +103,21 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W      &kp E         &kp R            &kp T                                           &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A        &kp S      &kp D         &kp F            &kp G        &kp LS(LG(S))       &kp AT_SIGN    &kp H        &kp J  &kp K      &kp L       &kp MINUS
-&kp Z        &kp X      &kp C         &kp V            &lt 6 B      &lt 5 TAB           &kp DELETE     &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LS(TAB)  &kp LCTRL  &kp LEFT_ALT  &lt 2 LA(GRAVE)  &lt 3 SPACE  &kp LEFT_SHIFT      &kp BACKSPACE  &lt 2 ENTER                                &kp LEFT_WIN
+&kp Q      &kp W      &kp E         &kp R            &kp T                                           &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A      &kp S      &kp D         &kp F            &kp G        &kp LS(LG(S))       &kp AT_SIGN    &kp H        &kp J  &kp K      &kp L       &kp MINUS
+&kp Z      &kp X      &kp C         &kp V            &lt 6 B      &lt 1 TAB           &lt 1 DEL      &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&lt 5 TAB  &kp LCTRL  &kp LEFT_ALT  &lt 2 LA(GRAVE)  &lt 3 SPACE  &kp LEFT_SHIFT      &kp BACKSPACE  &lt 2 ENTER                                &kp LEFT_WIN
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        Free {
+        ShortCut {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp ESCAPE  &kp LG(L)  &trans     &trans     &kp LA(LC(T))                       &kp F1    &kp F2   &kp F3       &kp F4         &kp F5
+&kp LC(A)   &trans     &trans     &trans     &trans         &trans      &kp F13  &kp F6    &kp F7   &kp F8       &kp F9         &kp F10
+&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans         &trans      &trans   &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp F11
+&trans      &trans     &trans     &trans     &trans         &trans      &trans   &trans                                         &kp F12
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;

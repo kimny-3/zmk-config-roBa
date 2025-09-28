@@ -109,7 +109,7 @@
 &lt 5 TAB  &kp LCTRL  &kp LEFT_ALT  &lt 2 LA(GRAVE)  &lt 3 SPACE  &kp RIGHT_SHIFT      &kp BACKSPACE  &lt 2 ENTER                                &kp LEFT_WIN
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp A B>;
         };
 
         ShortCut {

@@ -116,7 +116,7 @@
             bindings = <
 &kp ESCAPE  &kp LG(L)  &trans       &trans     &kp LC(RS(T))                       &kp F1    &kp F2   &kp F3       &kp F4         &kp F5
 &kp LC(A)   &kp TAB    &kp RS(TAB)  &trans     &trans         &trans      &kp F13  &kp F6    &kp F7   &kp F8       &kp F9         &kp F10
-&kp LC(Z)   &kp LC(X)  &kp LC(C)    &kp LC(V)  &trans         &trans      &trans   &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp F11
+&kp LC(Z)   &kp LC(X)  &kp LC(C)    &kp LC(V)  &trans         &trans      &to 3    &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp F11
 &trans      &trans     &trans       &trans     &trans         &trans      &trans   &trans                                         &kp F12
             >;
 
@@ -134,12 +134,12 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        ARROW {
+        ARROW+NUMBER {
             bindings = <
 &kp ESCAPE       &kp LC(RS(TAB))         &kp UP_ARROW    &kp LC(RS(TAB))          &trans                                         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_SLASH  &kp KP_ASTERISK
 &kp HOME         &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &kp C_MUTE           &kp TAB          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_COMMA  &kp KP_MINUS
-&kp RIGHT_SHIFT  &kp LG(RS(LEFT_ARROW))  &trans          &kp LG(RS(RIGHT_ARROW))  &trans   &trans               &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp KP_PLUS
-&kp KP_NUMLOCK   &trans                  &trans          &trans                   &trans   &kp RIGHT_SHIFT      &kp BACKSPACE    &kp ENTER                                                        &kp KP_ENTER
+&kp RIGHT_SHIFT  &kp LG(RS(LEFT_ARROW))  &trans          &kp LG(RS(RIGHT_ARROW))  &trans   &to 0                &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp KP_PLUS
+&kp KP_NUMLOCK   &trans                  &trans          &trans                   &trans   &kp RIGHT_SHIFT      &kp BACKSPACE    &kp ENTER                                                        &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;

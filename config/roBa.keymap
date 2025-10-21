@@ -114,10 +114,10 @@
 
         ShortCut {
             bindings = <
-&kp ESCAPE  &kp LG(L)  &trans       &trans     &kp LC(RS(T))                       &kp F1    &kp F2   &kp F3       &kp F4         &kp F5
-&kp LC(A)   &kp TAB    &kp RS(TAB)  &trans     &trans         &trans      &kp F13  &kp F6    &kp F7   &kp F8       &kp F9         &kp F10
-&kp LC(Z)   &kp LC(X)  &kp LC(C)    &kp LC(V)  &trans         &trans      &to 3    &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp F11
-&trans      &trans     &trans       &trans     &trans         &trans      &trans   &trans                                         &kp F12
+&kp ESCAPE  &kp LG(L)  &trans       &trans     &kp LC(RS(T))                          &kp F1    &kp F2   &kp F3       &kp F4         &kp F5
+&kp LC(A)   &kp TAB    &kp RS(TAB)  &trans     &trans         &trans         &kp F13  &kp F6    &kp F7   &kp F8       &kp F9         &kp F10
+&kp LC(Z)   &kp LC(X)  &kp LC(C)    &kp LC(V)  &trans         &kp LG(L)      &to 3    &kp HOME  &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp F11
+&trans      &trans     &trans       &trans     &trans         &trans         &trans   &trans                                         &kp F12
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
@@ -154,12 +154,12 @@
             >;
         };
 
-        Function+Scroll {
+        Scroll {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp HOME  &trans  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
             >;
         };
 

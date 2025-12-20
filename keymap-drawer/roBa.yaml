@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - Gui+Sft+S
-  - '@'
+  - {t: '@', h: Bluetooth}
   - H
   - J
   - K
@@ -29,7 +29,7 @@ layers:
   - V
   - B
   - {t: TAB, h: ShortCut}
-  - {t: DEL, h: ShortCut}
+  - DEL
   - N
   - M
   - ','
@@ -72,7 +72,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: Gui+L, type: held}
   - {t: ARROW+NUMBER, h: toggle}
   - HOME
   - END
@@ -153,15 +153,15 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - KP COMMA
+  - ','
   - KP MINUS
   - RIGHT SHIFT
-  - Gui+Sft+LEFT ARROW
+  - Sft+LEFT
   - {t: ▽, type: trans}
-  - Gui+Sft+RIGHT ARROW
+  - Sft+RIGHT
   - {t: ▽, type: trans}
   - {t: default, h: toggle}
-  - KP 0
+  - KP ENTER
   - KP 1
   - KP 2
   - KP 3
@@ -174,21 +174,11 @@ layers:
   - {type: held}
   - RIGHT SHIFT
   - BACKSPACE
-  - ENTER
-  - {t: default, h: toggle}
-  '4': ['', '', '', '', '', '', '', '', '&mkp MCLK', '', '', '', '', '', '', '', '', '', '', '&mkp LCLK', Function+Scroll, '&mkp RCLK', '', '', '', '', '', '', '',
-    '', '', '', '', '', '', '', '', '', '', '', '', '', '']
-  Function+Scroll:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - KP 0
+  - RIGHT SHIFT
+  '4': ['', '', '', '', '', '', '', '', '&mkp MCLK', '', '', '', '', '', '', '', '', '', '', '&mkp LCLK', Scroll, '&mkp RCLK', '', '', '', '', '', '', '', '', '',
+    '', '', '', '', LCTRL, LEFT ALT, '', '', RIGHT SHIFT, '', '', '']
+  Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -199,8 +189,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
   - {type: held}
-  - F11
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -212,7 +212,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F12
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -239,7 +239,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sys_reset'
+  - {t: '&sys_reset', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -257,7 +257,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

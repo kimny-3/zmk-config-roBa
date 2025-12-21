@@ -163,19 +163,19 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp HOME  &trans  &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                            &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans       &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp HOME     &trans  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp PAGE_UP  &trans  &kp PAGE_DOWN
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                               &trans
             >;
         };
 
         Bluetooth {
             bindings = <
-&kp LANGUAGE_1  &kp LANGUAGE_2  &kp LANGUAGE_3  &kp LANGUAGE_4  &kp LANGUAGE_5                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LANGUAGE_6  &kp LANGUAGE_7  &kp LANGUAGE_8  &kp LANGUAGE_9  &none           &trans      &sys_reset   &trans        &trans        &trans        &trans        &trans
-&trans          &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &trans          &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans          &trans          &trans          &trans          &trans          &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&kp LANGUAGE_1       &kp LANGUAGE_2    &kp LANGUAGE_3            &kp LANGUAGE_4  &kp LANGUAGE_5                          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp LANGUAGE_6       &kp LANGUAGE_7    &kp LANGUAGE_8            &kp LANGUAGE_9  &none           &none      &sys_reset   &none         &none         &none         &none         &none
+&kp INTERNATIONAL_4  &kp INT_MUHENKAN  &kp INT_KATAKANAHIRAGANA  &none           &none           &none      &bootloader  &none         &none         &none         &none         &bt BT_CLR
+&none                &none             &none                     &none           &none           &none      &none        &none                                                   &bt BT_CLR_ALL
             >;
         };
     };

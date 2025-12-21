@@ -65,7 +65,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        BackSpace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <40 41>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -165,10 +172,10 @@
 
         Bluetooth {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &sys_reset   &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&kp LANGUAGE_1  &kp LANGUAGE_2  &kp LANGUAGE_3  &kp LANGUAGE_4  &kp LANGUAGE_5                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp LANGUAGE_6  &kp LANGUAGE_7  &kp LANGUAGE_8  &kp LANGUAGE_9  &none           &trans      &sys_reset   &trans        &trans        &trans        &trans        &trans
+&trans          &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &trans          &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans          &trans          &trans          &trans          &trans          &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };

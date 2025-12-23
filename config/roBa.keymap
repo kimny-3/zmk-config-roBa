@@ -87,6 +87,11 @@
             bindings = <&to 3>;
             key-positions = <40 28>;
         };
+
+        CTRL {
+            bindings = <&kp RCTRL>;
+            key-positions = <22 23>;
+        };
     };
 
     macros {

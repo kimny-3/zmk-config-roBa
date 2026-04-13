@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - Gui+Sft+S
-  - {t: '@', h: Bluetooth}
+  - '@'
   - H
   - J
   - K
@@ -27,18 +27,18 @@ layers:
   - X
   - C
   - V
-  - B
-  - {t: TAB, h: ShortCut}
-  - DEL
+  - {t: B, h: '4'}
+  - '#'
+  - DELETE
   - N
   - M
   - ','
   - .
   - /
   - {t: TAB, h: Bluetooth}
-  - LCTRL
-  - LEFT ALT
-  - {t: Alt+`, h: SYMBOLE}
+  - {t: LANGUAGE 2, h: LCTRL}
+  - {t: LANGUAGE 1, h: LEFT ALT}
+  - {t: TAB, h: SYMBOLE}
   - {t: SPACE, h: ARROW+NUMBER}
   - RIGHT SHIFT
   - {t: BACKSPACE, h: ShortCut}
@@ -61,7 +61,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F13
+  - {t: ▽, type: trans}
   - F6
   - F7
   - F8
@@ -72,8 +72,8 @@ layers:
   - Ctl+C
   - Ctl+V
   - {t: ▽, type: trans}
-  - {t: Gui+L, type: held}
-  - {t: ARROW+NUMBER, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - HOME
   - END
   - PAGE UP
@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - F12
   SYMBOLE:
@@ -111,24 +111,24 @@ layers:
   - '['
   - ']'
   - _
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - ''
+  - ''
+  - ''
+  - ''
   - /
+  - ''
+  - DELETE
   - ;
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - Sft+;
+  - ''
+  - ''
+  - ''
   - Sft+CAPSLOCK
-  - INTERNATIONAL 4
-  - LANGUAGE 5
-  - {t: RIGHT SHIFT, type: held}
-  - LEFT SHIFT
-  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BACKSPACE
   - RET
   - INT RO
@@ -143,11 +143,11 @@ layers:
   - KP 9
   - KP SLASH
   - KP ASTERISK
-  - HOME
+  - ''
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
-  - END
+  - Sft+;
   - MUTE
   - TAB
   - KP 4
@@ -156,12 +156,12 @@ layers:
   - ','
   - KP MINUS
   - RIGHT SHIFT
-  - Sft+LEFT
+  - ''
   - {t: ▽, type: trans}
-  - Sft+RIGHT
+  - ''
   - {t: ▽, type: trans}
   - {t: default, h: toggle}
-  - KP ENTER
+  - ENTER
   - KP 1
   - KP 2
   - KP 3
@@ -176,8 +176,50 @@ layers:
   - BACKSPACE
   - KP 0
   - RIGHT SHIFT
-  '4': ['', '', '', '', '', '', '', '', '&mkp MCLK', '', '', '', '', '', '', '', '', '', '', '&mkp LCLK', Scroll, '&mkp RCLK', '', '', '', '', '', '', '', '', '',
-    '', '', '', '', LCTRL, LEFT ALT, '', '', RIGHT SHIFT, '', '', '']
+  '4':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - UP ARROW
+  - '&mkp LCLK'
+  - Scroll
+  - '&mkp RCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - ''
+  - ''
+  - ''
+  - LCTRL
+  - LEFT ALT
+  - ''
+  - ''
+  - RIGHT SHIFT
+  - ''
+  - ''
+  - ''
   Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -205,14 +247,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - PAGE UP
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -223,46 +265,57 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Bluetooth:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '&sys_reset', type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '&bootloader'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - BT CLR ALL
+combos:
+- p: [8, 9]
+  k: BACKSPACE
+- p: [10, 11]
+  k: TAB
+- p: [0, 1]
+  k: ESCAPE
+- p: [40, 28]
+  k: {t: ARROW+NUMBER, h: toggle}
+- p: [22, 23]
+  k: RCTRL

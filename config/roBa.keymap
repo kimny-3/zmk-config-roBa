@@ -90,12 +90,12 @@
 
         JP {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <26 27>;
+            key-positions = <26 25>;
         };
 
         ENG {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <28 29>;
+            key-positions = <29 30>;
         };
 
         Function7 {
@@ -145,10 +145,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W      &kp E         &kp R             &kp T                                              &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A      &kp S      &kp D         &kp F             &kp G        &kp LG(RS(S))        &kp AT_SIGN      &kp H        &kp J  &kp K      &kp L       &kp MINUS
-&kp Z      &kp X      &kp C         &kp V             &lt 4 B      &kp HASH             &kp DELETE       &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&lt 6 TAB  &kp LCTRL  &kp LEFT_ALT  &lt 2 LANGUAGE_1  &lt 3 SPACE  &kp RIGHT_SHIFT      &lt 1 BACKSPACE  &lt 2 ENTER                                &kp LEFT_WIN
+&kp Q      &kp W      &kp E         &kp R      &kp T                                              &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A      &kp S      &kp D         &kp F      &kp G        &kp LG(RS(S))        &kp COLON        &kp H        &kp J  &kp K      &kp L       &kp MINUS
+&kp Z      &kp X      &kp C         &kp V      &lt 4 B      &kp HASH             &kp DELETE       &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&lt 6 TAB  &kp LCTRL  &kp LEFT_ALT  &lt 2 F10  &lt 3 SPACE  &kp RIGHT_SHIFT      &lt 1 BACKSPACE  &lt 2 ENTER                                &kp LEFT_WIN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;

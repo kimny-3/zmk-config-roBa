@@ -109,7 +109,7 @@
         };
 
         colon {
-            bindings = <&kp COLON>;
+            bindings = <&kp RS(COLON)>;
             key-positions = <14 13>;
         };
     };

@@ -107,6 +107,11 @@
             bindings = <&kp F10>;
             key-positions = <17 18>;
         };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <14 13>;
+        };
     };
 
     macros {

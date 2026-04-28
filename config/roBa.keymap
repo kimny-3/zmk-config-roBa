@@ -109,7 +109,7 @@
         };
 
         colon {
-            bindings = <&kp ASTRK>;
+            bindings = <&kp SQT>;
             key-positions = <13 14>;
         };
     };

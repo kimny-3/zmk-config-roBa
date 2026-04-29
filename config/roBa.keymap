@@ -109,17 +109,39 @@
         };
 
         colon {
-            bindings = <&kp SQT>;
+            bindings = <&jis_colon>;
             key-positions = <13 14>;
+        };
+
+        parenthes {
+            bindings = <&parenthes>;
+            key-positions = <8 9>;
         };
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        jis_colon: jis_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_SHIFT>,
+                <&macro_press>,
+                <&kp SEMICOLON>,
+                <&macro_tap>,
+                <&macro_release>,
+                <&kp RIGHT_SHIFT>;
+
+            label = "JIS_COLON";
+        };
+
+        parenthes: parenthes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp F10 &kp ENTER &kp LEFT>,
+                <&macro_tap>;
+
+            label = "PARENTHES";
         };
     };
 

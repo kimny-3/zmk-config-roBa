@@ -109,8 +109,13 @@
         };
 
         colon {
-            bindings = <&kp SQT>;
+            bindings = <&jis_colon>;
             key-positions = <13 14>;
+        };
+
+        parenthes {
+            bindings = <&parenthes>;
+            key-positions = <20 21>;
         };
     };
 
@@ -120,6 +125,38 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        jis_colon: jis_colon {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp RIGHT_SHIFT>,
+                <&macro_press>,
+                <&kp SEMI>,
+                <&macro_tap>,
+                <&macro_release>,
+                <&kp RIGHT_SHIFT>;
+
+            label = "JIS_COLON";
+        };
+
+        parenthes: parenthes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_PARENTHESIS>,
+                <&macro_tap>,
+                <&kp RIGHT_PARENTHESIS>,
+                <&macro_tap>,
+                <&kp F10>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_tap>;
+
+            label = "PARENTHES";
         };
     };
 

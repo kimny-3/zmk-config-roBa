@@ -145,6 +145,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&kp LANG1>,
+                <&macro_tap>,
                 <&kp LEFT_PARENTHESIS>,
                 <&macro_tap>,
                 <&kp RIGHT_PARENTHESIS>,

@@ -135,8 +135,8 @@
                 <&macro_press>,
                 <&kp SEMI>,
                 <&macro_tap>,
-                <&macro_release>,
-                <&kp RIGHT_SHIFT>;
+                <&kp RIGHT_SHIFT>,
+                <&macro_release>;
 
             label = "JIS_COLON";
         };

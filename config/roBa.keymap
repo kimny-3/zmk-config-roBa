@@ -98,11 +98,6 @@
             key-positions = <29 30>;
         };
 
-        Function7 {
-            bindings = <&kp F7>;
-            key-positions = <5 6>;
-        };
-
         Function10 {
             bindings = <&kp F10>;
             key-positions = <17 18>;

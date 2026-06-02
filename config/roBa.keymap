@@ -99,6 +99,11 @@
             bindings = <&parenthes>;
             key-positions = <20 21>;
         };
+
+        F10_combo {
+            bindings = <&kp F10>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {

@@ -104,6 +104,16 @@
             bindings = <&kp F10>;
             key-positions = <18 19>;
         };
+
+        KANA {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <14 13>;
+        };
+
+        ENG {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <13 12>;
+        };
     };
 
     macros {
